@@ -1,0 +1,30 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container {
+  @include flex(row, space-between, center);
+  width: 90%;
+  height: 20%;
+  font-size: $smallText;
+}
+
+.subcontainer {
+  @include flex;
+}
+
+.image {
+  border-radius: 5px;
+  width: 20%;
+  height: 20%;
+}
+
+.uploadTitle {
+  font-weight: bold;
+  color: $purple;
+  margin: 0 15px;
+}
+
+.uploadDate {
+  color: $grey;
+  margin: 0 15px;
+}

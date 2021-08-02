@@ -1,0 +1,44 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.container {
+  @include flex(column, flex-start, center);
+  color: $purple;
+}
+
+.image {
+  width: 80%;
+}
+
+.title {
+  font-size: $normalText;
+}
+
+.banner {
+  margin: 10px 10%;
+  width: 80%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: $purple;
+  color: whitesmoke;
+  margin-left: -100px;
+}
+
+.dottedBanner {
+  border: 2px dashed $purple;
+  margin-left: 60px;
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 80%;
+  height: 40%;
+  padding: 30px;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color: $blue;
+  cursor: pointer;
+  padding: 10px;
+  margin: 15px;
+}

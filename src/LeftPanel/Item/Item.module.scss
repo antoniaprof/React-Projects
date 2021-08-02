@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.container {
+  @include flex( column, space-between, center);
+  width: 60px;
+  height: 80px;
+  margin: 10px;
+}
+
+.itemBg {
+  @include flex;
+  width: 80%;
+  height: 60%;
+  border-radius: 5px;
+  background-color: $lightPurple;
+}
+
+.itemTitle {
+  margin: 0;
+  font-size: $mediumText;
+}
+
+.icon {
+  font-size: 20px;
+  color: $purple;
+}

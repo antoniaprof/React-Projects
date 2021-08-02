@@ -1,0 +1,38 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.folder {
+  margin: 0 20px;
+  border-radius: 5px;
+  width: 20%;
+  box-shadow: 0px 45px 27px -5px rgba(0, 0, 0, 0.43);
+}
+
+.rowContainer {
+  @include flex(row, space-between, flex-start);
+}
+
+.folderIcon {
+  font-size: 40px;
+  margin: 15px;
+}
+
+.dotsIcon {
+  font-size: 15px;
+  margin: 15px;
+  color: $purple;
+}
+
+.folderTitle {
+  margin: 0 15px;
+  color: $purple;
+  font-size: $normalText;
+  color: $purple;
+}
+
+.folderText {
+  margin: 0;
+  color: $grey;
+  margin: 10px;
+  font-size: $smallText;
+}

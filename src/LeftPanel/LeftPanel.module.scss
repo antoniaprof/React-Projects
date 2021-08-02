@@ -1,0 +1,54 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.container {
+  width: 15%;
+  height: 100%;
+  border-right: $border;
+  padding-top: 10px;
+}
+
+.row {
+  @include flex;
+}
+
+.storage {
+  @include flex(column, center, center);
+  margin-top: 50px;
+}
+
+.storageTitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: $normalText;
+}
+
+.storageText {
+  margin: 0;
+}
+
+.progressBar {
+  box-sizing: border-box;
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: $lightPurple;
+}
+
+.innerProgressBar {
+  box-sizing: border-box;
+  width: 79%;
+  height: 9px;
+  border: 1px solid $pink;
+  border-radius: 10px;
+  background-color: $pink;
+}
+
+.buttonContainer {
+  @include flex;
+}
+
+.button {
+  @include purpleButton;
+}

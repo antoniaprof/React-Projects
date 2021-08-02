@@ -1,0 +1,50 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.container {
+  @include flex(row, space-between, center);
+  width: 90%;
+  //   height: 7%;
+  margin: 5px 0;
+}
+
+.subcontainer {
+  @include flex(row, flex-start, center);
+  width: 100%;
+}
+
+.iconContainer {
+  @include flex;
+  width: 50px;
+  height: 50px;
+  background-color: $lightPurple;
+  border-radius: 5px;
+}
+
+.icon {
+  color: $purple;
+  font-size: 25px;
+}
+
+.textContainer {
+  @include flex(column, center, flex-start);
+  width: 80%;
+}
+
+.title {
+  margin: 0;
+  font-size: $mediumText;
+}
+
+.text {
+  margin: 0;
+  font-size: $smallText;
+  color: $mediumPurple;
+}
+
+.date {
+  width: 30%;
+  margin: 0;
+  font-size: $smallText;
+  color: $mediumPurple;
+}

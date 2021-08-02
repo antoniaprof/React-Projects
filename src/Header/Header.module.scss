@@ -1,0 +1,69 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.container {
+  @include flex;
+  width: 100%;
+  height: 10%;
+  border-bottom: $border;
+  color: $purple;
+}
+
+//left section
+.logo {
+  @include flex;
+  width: 10%;
+  height: 100%;
+  font-size: 20px;
+}
+
+#cloudIcon {
+  color: $purple;
+  margin: 15px;
+}
+
+//middle section
+.searchSection {
+  @include flex;
+  width: 65%;
+  height: 100%;
+}
+
+.search {
+  @include flex(row, flex-start, center);
+  border: $border;
+  border-radius: 5px;
+  width: 80%;
+  height: 50%;
+  color: $grey;
+}
+
+#searchIcon {
+  color: $purple;
+  font-size: 20px;
+  margin: 15px;
+}
+
+//right section
+.userSection {
+  @include flex;
+  width: 20%;
+  height: 100%;
+}
+
+#userIcon {
+  color: $grey;
+  margin-right: 25px;
+  font-size: 30px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.userDetails {
+  margin: 2px;
+  color: $pink;
+}
